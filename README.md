@@ -26,3 +26,7 @@ We also have to configure an authorized redirect URI in the Google Console, whic
 By default, Spring Boot configures this redirect URI as /login/oauth2/code/{registrationId}. Therefore, for Google we'll add the URI:
 
 http://localhost:8081/login/oauth2/code/google
+
+# Configure Client-ID and Secrets into applcation.properties
+spring.security.oauth2.client.registration.google.client-id=XXXXX4090700-bl49ek7au70nhnl3lffkvjjm0tkemj13.apps.googleusercontent.com # <replace with yours>
+spring.security.oauth2.client.registration.google.client-secret=mg6vwAHFf3VjxR2JXvYGyNF1 # <replace with yours>
